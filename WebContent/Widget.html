@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- jquery.parkingmap.css -->
+<link rel="stylesheet" type="text/css" href="../source/css/jquery.parkingmap.css">
+
+<!-- jQuery,Google Maps, & jquery.parkingmap.js  -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://maps.googleapis.com/maps/api/js?sensor=false" type="text/javascript"></script>
+<script type="text/javascript" src="../source/jquery.parkingmap.js"></script>
+<meta charset="ISO-8859-1">
+<title>Map</title>
+</head>
+<body>
+
+$(function() {
+	$("#parkwhiz-widget-venue").parkingMap({
+		parkwhizKey: '...',
+		location: {
+			venue: 'united-center-parking',
+		},
+	});
+});
+
+	<!-- <iframe id="pw-widget"
+		src="//parkwhiz.com/developers/widget/?modules%5B%5D=map&modules%5B%5D=parking_locations&location%5Bdestination%5D%5B%5D=detroit%2C+mi&location%5Bdestination%5D%5B%5D=&location%5Bevent%5D%5B%5D=&location%5Bvenue%5D%5B%5D=&monthly=0&hideLocationMarker=0&hidePrice=0&parkwhizKey=45c4748e9cc212524a3a7aca5d8c23e3&mapHeight=800"
+		scrolling="no" frameborder="0"
+		style="border: none; overflow: hidden; height: 455px; width: 400px;"
+		height="455px" width="400px" allowTransparency="true"></iframe>
+	<br>
+	<a href="http://www.parkwhiz.com/" target="_blank"
+		style="font-size: 12px; text-align: center; display: inline-block; width: 400px;"
+		title="ParkWhiz Parking">Parking powered by ParkWhiz</a> -->
+
+</body>
+</html>
